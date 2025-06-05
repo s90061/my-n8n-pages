@@ -10,21 +10,20 @@
             margin: 20px;
             line-height: 1.6;
         }
-        h2 {
+        h1 {
             color: #2c3e50;
         }
-        p {
-            margin-bottom: 15px;
+        #content {
+            white-space: normal;
         }
     </style>
 </head>
 <body>
     <h1>Economics News Articles</h1>
-    <p>Okay, here are three news articles related to economics, written at a B2 level English proficiency.</p>
+    <div id="content"></div>
 
-    <h2>Article 1: UK Inflation Remains High, Squeezing Household</h2>
-<pre>
-    Okay, here are three news articles related to economics, written at a B2 level English proficiency.
+    <script>
+        const text = `Okay, here are three news articles related to economics, written at a B2 level English proficiency.
 
 **Article 1: UK Inflation Remains High, Squeezing Household Budgets**
 
@@ -46,7 +45,8 @@ Investment in renewable energy sources, such as solar and wind power, is surging
 This shift is being driven by a combination of factors.  Governments around the world are implementing policies to encourage the development of renewable energy, such as subsidies and tax incentives.  Furthermore, the cost of renewable energy technologies has fallen dramatically in recent years, making them increasingly competitive with fossil fuels.  Finally, businesses and consumers are becoming more aware of the environmental benefits of renewable energy and are increasingly choosing to invest in green technologies.
 
 The surge in renewable energy investment is not only good news for the environment, but also for the economy.  The renewable energy sector is creating jobs and driving innovation.  Furthermore, it is helping to reduce reliance on imported fossil fuels, boosting energy security.  While challenges remain, such as the need for improved energy storage solutions, the renewable energy transition is well underway and is set to play a major role in shaping the future of the global economy.  Analysts believe continued investment and technological advancements will be crucial for achieving global climate goals.
-
-</pre>
+`;
+        document.getElementById('content').innerHTML = text.replace(/\n/g, '<br>');
+    </script>
 </body>
 </html>
